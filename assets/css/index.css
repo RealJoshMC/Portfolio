@@ -109,7 +109,8 @@ ul li:hover {
 }
 
 .mobile-menu li {
-        margin-bottom: 10px;
+        padding-top: 8px;
+        margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 500px) {
