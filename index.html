@@ -2,21 +2,39 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Im JoshMC im making 3D models (Using My Phone) for Minecraft Bedrock and im also making pixel art
-    Twitter: @RealJoshMC
-    Sketchfab: https://sketchfab.com/RealJoshMC/models" />
-    <link rel="icon" href="assets/img/logo.png"/>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <title>JoshMC</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Im JoshMC im making 3D models for Minecraft Bedrock and some pixel art" />
+        <link rel="icon" href="assets/img/logo.png" />
+        <link rel="stylesheet" href="assets/css/index.css" />
+        <title>JoshMC</title>
 </head>
 
 <body>
-       <model-viewer bounds="tight" src="assets/models/robot progress 1.glb" camera-controls shadow-intensity="1">
-</model-viewer>
-
-
+        <header>
+                <div id="brand">
+                        <img class="" src="assets/img/logo.png" alt="" />
+                        <a class="name"href="#">JoshMC</a>
+                </div>
+                <nav>
+                        <ul>
+                                <li><a href="/home">Home</a></li>
+                                <li><a href="/products">Portfolio</a></li>
+                                <li><a href="/about">About Me</a></li>
+                        </ul>
+                </nav>
+                <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                        <ul class="mobile-menu">
+                                <li><a href="/home">Home</a></li>
+                                <li><a href="/products">Portfolio</a></li>
+                                <li><a href="/about">About Me</a></li>
+                        </ul>
+                </div>
+        </header>
+        <script src="assets/js/index.js"></script>
 </body>
 
 </html>
