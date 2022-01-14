@@ -10,8 +10,6 @@ http://www.tooplate.com/view/2106-soft-landing
 
 body {
         overflow-x: hidden;
-        background: #F9F9F9;
-        font-family: "Poppins", sans-serif;
 }
 
 /*---------------------------------------
@@ -196,14 +194,14 @@ footer {
 .custom-navbar .nav li a {
         font-size: 16px;
         font-weight: normal;
-        color: #414448;
+        color: #f0f0f0;
         padding-right: 22px;
         padding-left: 22px;
 }
 
 .custom-navbar .nav li a:hover {
         background: transparent;
-        color: #3A4340;
+        color: #383F3F;
 }
 
 .custom-navbar .navbar-nav>li>a:hover,
@@ -213,7 +211,7 @@ footer {
 
 .custom-navbar .nav li.active>a {
         background-color: transparent;
-        color: #29ca8e;
+        color: #383F3F;
 }
 
 .custom-navbar .navbar-toggle {
@@ -226,7 +224,7 @@ footer {
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-        background: #29ca8e;
+        background: #383F3F;
         border-color: transparent;
 }
 
@@ -282,30 +280,31 @@ footer {
 }
 
 #home h1 {
-        color: #ffffff;
+        color: #000000;
         margin-top: 10px;
         margin-bottom: 40px;
 }
 
-.portfolio-info {
+.home-info {
         margin-top: 7em;
 }
 
-.portfolio-info img {
+.home-info img {
         width: 20%;
         height: 20%;
+        background-color: #575757A3;
 }
 
-.portfolio-info h3 {
-        color: #464E52;
-        font-size: 11px;
+.home-info h3 {
+        color: #686D70;
+        font-size: 101px;
         font-weight: bold;
         letter-spacing: 4px;
         text-transform: uppercase;
         margin: 10px 0;
 }
 
-.portfolio-info .portfolio-btn {
+.home-info .portfolio-btn {
         font-weight: 200px;
         color: black;
         padding: 14px;
