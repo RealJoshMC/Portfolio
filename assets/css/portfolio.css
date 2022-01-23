@@ -1,458 +1,112 @@
-/*
-
-Template 2106 Soft Landing
-
-http://www.tooplate.com/view/2106-soft-landing
-	
-*/
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
 body {
-        overflow-x: hidden;
+        font-family: Arial;
+        margin: 0;
 }
 
-/*---------------------------------------
-     GENERAL               
-  -----------------------------------------*/
-
-html {
-        -webkit-font-smoothing: antialiased;
-}
-
-a {
-        color: #3C424F;
-        text-decoration: none !important;
-}
-
-a,
-input,
-button,
-.form-control {
-        -webkit-transition: 0.5s;
-        transition: 0.5s;
-}
-
-a:hover,
-a:active,
-a:focus {
-        color: #464D52;
-        outline: none;
-}
-
-::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-        cursor: pointer;
-        background: #202020;
-}
-
-.section-title {
-        padding-bottom: 40px;
-}
-
-section {
-        position: relative;
-        padding: 100px 0;
-}
-
-#contact,
-footer {
-        background: #2C343B;
-        text-align: center;
-}
-
-.overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        
-        
-}
-
-
-.overlay img {
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-}
-
-/*---------------------------------------
-     BUTTONS               
-  -----------------------------------------*/
-
-.section-btn {
-        background: #3F4A4E;
-        border: 0;
-        border-radius: 50px;
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: normal;
-        padding: 12px 30px;
-        transition: 0.5s 0.2s;
-}
-
-.section-btn:hover,
-.section-btn:focus {
-        background: #202020;
-        color: #ffffff;
-}
-
-
-
-/*---------------------------------------
-       PRE LOADER              
-  -----------------------------------------*/
-
-.preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 99999;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        background: none repeat scroll 0 0 #ffffff;
-}
-
-.spinner {
-        border: 1px solid transparent;
-        border-radius: 3px;
-        position: relative;
-}
-
-.spinner:before {
-        content: '';
+* {
         box-sizing: border-box;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 45px;
-        height: 45px;
-        margin-top: -10px;
-        margin-left: -10px;
-        border-radius: 50%;
-        border: 1px solid #575757;
-        border-top-color: #ffffff;
-        animation: spinner .9s linear infinite;
 }
 
-@-webkit-@keyframes spinner {
-        to {
-                transform: rotate(360deg);
-        }
-}
-
-@keyframes spinner {
-        to {
-                transform: rotate(360deg);
-        }
-}
-
-
-
-/*---------------------------------------
-      MENU              
-  -----------------------------------------*/
-
-.custom-navbar {
-        border: none;
-        margin-bottom: 0;
-        padding: 25px 0;
-}
-
-.custom-navbar .navbar-brand {
-        color: #ffffff;
-        font-size: 25px;
-        font-weight: 500;
-        letter-spacing: -1px;
-}
-
-.top-nav-collapse {
-        background: #ffffff;
-}
-
-.custom-navbar .navbar-nav {
-        margin-left: 6em;
-}
-
-.custom-navbar .nav li a {
-        font-size: 16px;
-        font-weight: normal;
-        color: #f0f0f0;
-        padding-right: 22px;
-        padding-left: 22px;
-}
-
-.custom-navbar .nav li a:hover {
-        background: transparent;
-        color: #383F3F;
-}
-
-.custom-navbar .navbar-nav>li>a:hover,
-.custom-navbar .navbar-nav>li>a:focus {
-        background-color: transparent;
-}
-
-.custom-navbar .nav li.active>a {
-        background-color: transparent;
-        color: #383F3F;
-}
-
-.custom-navbar .navbar-toggle {
-        border: none;
-        padding-top: 10px;
-}
-
-.custom-navbar .navbar-toggle {
-        background-color: transparent;
-}
-
-.custom-navbar .navbar-toggle .icon-bar {
-        background: #383F3F;
-        border-color: transparent;
-}
-
-@media(min-width:768px) {
-        .custom-navbar {
-                border-bottom: 0;
-                background: 0 0;
-        }
-
-        .custom-navbar.top-nav-collapse {
-                background: #ffffff;
-                -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-                -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-                box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-                padding: 10px 0;
-        }
-
-        .top-nav-collapse .navbar-brand {
-                color: #252525;
-        }
-
-        .top-nav-collapse .nav li a {
-                color: #575757;
-        }
-
-        .top-nav-collapse .nav .section-btn a {
-                color: #ffffff;
-        }
-}
-
-
-
-/*---------------------------------------
-      HOME          
-  -----------------------------------------*/
-
-#home {
-        background: url('../images/home-bg.jpg') no-repeat center center;
-        background-size: cover;
-        vertical-align: middle;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
+.header {
+        width: 100%;
+        height: 11%;
+        padding: 5px;
+        background-color: white;
         display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        min-height: 100vh;
+        position: fixed;
+        justify-content: center;
+        box-shadow: 0 -10px 20px black;
+}
+
+.header img {
+        width: auto;
+        height: auto;
+}
+
+img {
+        vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
         position: relative;
-        padding-top: 12em;
-        text-align: center;
+        margin: 5%;
 }
 
-#home h1 {
-        color: #000000;
-        margin-top: 10px;
-        margin-bottom: 40px;
+/* Hide the images by default */
+.mySlides {
+        display: none;
 }
 
-.home-info {
-        margin-top: 7em;
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+        cursor: pointer;
 }
 
-.home-info img {
-        width: 20%;
-        height: 20%;
-        background-color: #575757A3;
-}
-
-.home-info h3 {
-        color: #686D70;
-        font-size: 101px;
-        font-weight: bold;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        margin: 10px 0;
-}
-
-.home-info .portfolio-btn {
-        font-weight: 200px;
-        color: black;
-        padding: 14px;
-        padding-left: 10%;
-        padding-right: 10%;
-        border: 2px solid #505B5F;
-        border-radius: 15px;
-}
-
-
-/*---------------------------------------
-      FEATURE              
-  -----------------------------------------*/
-
-#feature {
-        background: #ffffff;
-}
-
-#feature .nav-tabs {
-        border-bottom: 0;
-}
-
-#feature .nav>li>a {
-        padding: 8px 0;
-}
-
-#feature .nav-tabs>li>a {
-        color: #999999;
-        font-size: 18px;
-        border: 0;
-        border-bottom: 3px solid transparent;
-        border-radius: 0;
-        margin-right: 35px;
-}
-
-#feature .nav-tabs>li.active>a,
-#feature .nav-tabs>li.active>a:focus,
-#feature .nav-tabs>li.active>a:hover {
-        background: transparent;
-        color: #202020;
-        border-bottom: 3px solid #29ca8e;
-}
-
-#feature .nav>li>a:focus,
-#feature .nav>li>a:hover {
-        background: transparent;
-        border-bottom: 3px solid #29ca8e;
-        color: #202020;
-}
-
-#feature .tab-content {
-        margin-top: 50px;
-}
-
-.tab-pane-item {
-        margin: 20px 0;
-}
-
-.tab-pane-item h2 {
-        margin: 0 0 5px 0;
-}
-
-.feature-image {
+/* Next & previous buttons */
+.prev,
+.next {
+        cursor: pointer;
         position: absolute;
-        bottom: -27em;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
 }
 
-/*---------------------------------------
-     FOOTER              
-  -----------------------------------------*/
-
-footer {
-        padding-bottom: px;
-        height: 50px;
+/* Position the "next button" to the right */
+.next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
 }
 
-.copyright-text p {
-        color: #DAEEFF;
-        margin: 0px;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+}
+
+/* Container for image text */
+.caption-container {
         text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
 }
 
-/*---------------------------------------
-     RESPONSIVE STYLES              
-  -----------------------------------------*/
-
-@media only screen and (max-width: 1200px) {
-
-        .custom-navbar .navbar-nav {
-                margin-left: 3em;
-        }
-
-        .home-info {
-                margin-top: 0;
-        }
+.row:after {
+        content: "";
+        display: table;
+        clear: both;
 }
 
-
-@media only screen and (max-width: 992px) {
-
-        section {
-                padding: 60px 0;
-        }
-
-        .custom-navbar .navbar-nav {
-                margin-left: 0;
-        }
-
-        .custom-navbar .nav li a {
-                font-size: 20px;
-                padding-right: 0px;
-                padding-left: 15px;
-        }
-        footer {
-                padding-bottom: 40px;
-        }
+/* Six columns side by side */
+.column {
+        float: left;
+        width: 16.66%;
 }
 
+/* Add a transparency effect for thumnbail images */
+.demo {
+        opacity: 0.6;
+}
 
-@media screen and (max-width: 767px) {
-
-        .section-title {
-                padding-bottom: 20px;
-        }
-
-        .custom-navbar {
-                background: #ffffff;
-                -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-                -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-                box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-                padding: 10px 0;
-                text-align: center;
-        }
-
-        .custom-navbar .nav li a {
-                line-height: normal;
-                padding: 5px;
-        }
-
-        .custom-navbar .navbar-brand,
-        .top-nav-collapse .navbar-brand {
-                color: #202020;
-                font-weight: normal;
-        }
-
-        .custom-navbar .nav li a,
-        .top-nav-collapse .nav li a {
-                color: #656565;
-        }
-
+.active,
+.demo:hover {
+        opacity: 1;
 }

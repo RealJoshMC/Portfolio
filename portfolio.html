@@ -8,77 +8,90 @@
         <meta name="description" content="Portfolio">
         <meta name="keywords" content="">
         <meta name="team" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.css">
-        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <link rel="icon" href="assets/img/logo.png" />
         <!-- MAIN CSS -->
-        <link rel="stylesheet" href="assets/css/portfolio.css">
+        <link rel="stylesheet" href="assets/css/portfolio.css" />
 </head>
 
 <body>
-        <!-- MENU -->
         <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
-                <div class="container">
-                        <div class="navbar-header">
-                                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                        <span class="icon icon-bar"></span>
-                                        <span class="icon icon-bar"></span>
-                                        <span class="icon icon-bar"></span>
-                                </button>
-                                <!-- lOGO TEXT HERE -->
-                                <a href="index.html" class="navbar-brand">JoshMC</a>
-                        </div>
-                        <!-- MENU LINKS -->
-                        <div class="collapse navbar-collapse">
-                                <ul class="nav navbar-nav">
-                                        <li><a href="index.html" class="smoothScroll">Home</a></li>
-                                        <li><a href="portfolio.html" class="smoothScroll">Portfolio</a></li>
-                                        <li><a href="index.html" class="smoothScroll">About Me</a></li>
-                                </ul>
-                        </div>
+                <div class="header">
+                        <img src="assets/img/logo.png" />
+                        <a class="LogoName" href="#">JoshMC</a>
                 </div>
         </section>
-        <!-- FEATURE -->
-        <section id="home" data-stellar-background-ratio="0.5">
-                <div class="overlay">
-                        <img class="" src="assets/img/bgl.png" alt="" />
+        <h2 style="text-align:center">Slideshow Gallery</h2>
+        <div class="container">
+                <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="assets/img/Model/avatar.png" style="width:100%">
                 </div>
-                <div class="container">
-                        <div class="row">
-                                <div class="col-md-offset-3 col-md-6 col-sm-12">
-                                        <div class="portfolio-info">
-                                                <div class="sketchfab-embed-wrapper"> <iframe title="Robot" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/3ec565efd1be4edd9049f65bfdfa720e/embed?autostart=1&camera=0"> </iframe>
-                                                        <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/robot-3ec565efd1be4edd9049f65bfdfa720e?utm_medium=embed&utm_campaign=share-popup&utm_content=3ec565efd1be4edd9049f65bfdfa720e" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Robot </a> by <a href="https://sketchfab.com/RealJoshMC?utm_medium=embed&utm_campaign=share-popup&utm_content=3ec565efd1be4edd9049f65bfdfa720e" target="_blank" style="font-weight: bold; color: #1CAAD9;"> RealJoshMC </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=3ec565efd1be4edd9049f65bfdfa720e" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p>
-                                                </div>
-                                                
-                                                <div class="sketchfab-embed-wrapper"> <iframe title="Robot 1" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/e3e5e8a64223439f9af9cb9296077641/embed?autostart=1&camera=0"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/robot-1-e3e5e8a64223439f9af9cb9296077641?utm_medium=embed&utm_campaign=share-popup&utm_content=e3e5e8a64223439f9af9cb9296077641" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Robot 1 </a> by <a href="https://sketchfab.com/RealJoshMC?utm_medium=embed&utm_campaign=share-popup&utm_content=e3e5e8a64223439f9af9cb9296077641" target="_blank" style="font-weight: bold; color: #1CAAD9;"> RealJoshMC </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=e3e5e8a64223439f9af9cb9296077641" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
-                                        </div>
-                                </div>
+                <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="assets/img/Model/robot.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="assets/img/Model/wumpus_5.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="assets/img/Model/free_model.png" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                <div class="caption-container">
+                        <p id="caption"></p>
+                </div>
+                <div class="row">
+                        <div class="column">
+                                <img class="demo cursor" src="assets/img/Model/avatar.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                        </div>
+                        <div class="column">
+                                <img class="demo cursor" src="assets/img/Model/robot.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                        </div>
+                        <div class="column">
+                                <img class="demo cursor" src="assets/img/Model/wumpus_5.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                        </div>
+                        <div class="column">
+                                <img class="demo cursor" src="assets/img/Model/free_model.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
                         </div>
                 </div>
-        </section>
-        <!-- FOOTER -->
-        <footer id="footer" data-stellar-background-ratio="0.5">
-                <div class="container">
-                        <div class="row">
-                                <div class="copyright-text">
-                                        <div>
-                                                <p>Copyright &copy; 2022 <br /> JoshMC Portfolio</p>
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-        </footer>
+        </div>
         <!-- SCRIPTS -->
-        <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.stellar.min.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/smoothscroll.js"></script>
-        <script src="assets/js/custom.js"></script>
+        <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("demo");
+                        var captionText = document.getElementById("caption");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        captionText.innerHTML = dots[slideIndex - 1].alt;
+                }
+        </script>
 </body>
 
 </html>

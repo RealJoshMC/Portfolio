@@ -35,6 +35,7 @@
         filter: blur(1px) brightness(75%);
         object-fit: cover;
         -webkit-animation: fadein 1.5s;
+        -webkit-animation: lefg 1.5s;
 }
 
 #home {
@@ -112,5 +113,15 @@
 
         to {
                 opacity: 1;
+        }
+}
+
+@-webkit-keyframes left {
+        0% {
+                right: 0;
+        }
+
+        100% {
+                right: 10%;
         }
 }
